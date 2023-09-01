@@ -1,0 +1,22 @@
+body {
+    /* MARGEN m20 o m + numero */
+    margin: 20px;
+    /* m10-20-10-20 */
+    margin: 10px 20px 10px 20px;
+
+    /* PADDING p + número */
+    padding: 20;
+
+    /* FONT FAMILY  ff */
+    font-family: serif;
+
+    /* FONT SIZE fz */
+    font-size: 5;
+
+    /* COLOR c */
+    color: #000;
+
+    /* DISPLAY BLOCK db */
+    display: block;
+
+}

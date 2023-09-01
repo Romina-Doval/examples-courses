@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Columnas Alineadas Horizontalmente</title>
+	<style>
+		.row {
+			background: #e8e8e8;
+			margin-top: 20px;
+		}
+
+		/* clase propia no bootstrap */
+		.columna {
+			background: #f2f2f2;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-start"> <!-- * las columnas se alienan a la izq/left de la fila/row-->
+			<div class="columna col-4">Columna 1</div> <!-- Emmet > div.columna.col-4{Columna $} -->
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-center"> <!-- * las columnas se alienan en el centro/center de la fila/row-->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-end"> <!-- * las columnas se alienan a la dcha/right de la fila/row-->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-around"> <!-- * deja espacio alrededor/costados de las columnas (dcha + izq de cada columna)-->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		<div class="row justify-content-between"> <!-- * deja espacio en el centro/medio de las columnas -->
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+
+		
+		<!-- * acomoda el espacio restante entre columnas de forma equitativa (todos los espacios tienen el mismo tamaño)-->
+		<div class="row justify-content-evenly"> 
+			<div class="columna col-4">Columna 1</div>
+			<div class="columna col-4">Columna 2</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

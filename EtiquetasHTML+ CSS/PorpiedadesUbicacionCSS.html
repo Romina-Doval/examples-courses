@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPIEDADES DE UBICACION CSS</title>
+
+<style>
+
+    /* Formatear valores por defecto en las hojas de style CSS --> utilizando selector universal */
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    /** Valores position -->
+    cajas principales: relative (si quiero centrarla: margin:auto)
+    margin --> cordenadas --> top right bottom  left; (manecillas del reloj)
+    margin --> 2 cordenadas --> vertical (top) horizontal/lateral (dcha/izq)
+    margin:auto --> centralizado a nivel lateral y superior 
+    margin: xpx (margen en todos los lados)
+    **/
+    
+    header {
+        position: relative;
+        margin:auto;
+        width: 1000px;
+        height: 126px;
+        background: #444;
+    }
+
+
+    /*position:absolute; --> nos permite ubicar una caja interna dentro de una principal 
+    Nos permite trabajar las coordenadas --> top left bottom right
+    */
+
+    #logo{
+	    position:absolute;
+	    top:30px;
+	    left:30px;
+        /** bottom: ;
+        right: ; **/
+	    width:200px;
+	    height:60px;
+	    background:#ccc;
+	}
+
+
+    /* Iconos Redes Sociales */
+
+    .redes{
+    	position:absolute;
+	    width:42px;
+	    height:42px;
+	    background:#ccc;
+	    border-radius:100%;
+	}
+
+    #icono1{
+	    top:42px;
+	right:120px;
+	}
+	
+    #icono2{
+	    top:42px;
+	    right:71px;
+	}
+	
+    #icono3{
+	    top:42px;
+	    right:19px;
+	}
+
+
+    /* Valores position --> cajas principales: relative (si quiero centrarla: margin:auto) */
+
+    nav {
+        position: relative;
+        margin:auto;
+        width: 1000px;
+        height: 48px;
+        background: #aaa;
+    }
+
+
+    /* Float --> los hace flotar */
+
+    .botones{
+	    float:left;
+	    width:196px;
+	    margin:0px 2px;
+	    height:48px;
+	    background:#333;
+	}
+
+
+    #top {
+        position: relative;
+        margin:20px auto;
+        width: 1000px;
+        height: 192px;
+        background: #888;
+    }
+
+    
+    /* Selleción en ruta */
+    #top ul{
+        width:1010px;
+        height:192px;
+	}
+    
+    #top ul li{
+        float:left;
+        width:326px;
+        height:192px;
+        background:black;
+        margin-right:10px;
+	}
+
+
+    section {
+        position: relative;
+        margin: auto;
+        width: 1000px;
+        height: 453px;
+        background: #aaa;
+    }
+
+    aside#izq{
+	    position:absolute;
+	    left:0;
+	    top:0;
+	    width:200px;
+	    height:453px;
+	    background:#333;
+	}
+	
+    article{
+	    position:absolute;
+	    left:200px;
+	    top:0;
+	    width:600px;
+	    height:453px;
+	    background:#666;
+	}
+	
+    aside#der{
+	    position:absolute;
+	    right:0;
+	    top:0;
+	    width:200px;
+	    height:453px;
+	    background:#333;
+	}
+
+
+    footer{
+	    position:relative;
+	    margin:auto;
+	    width:1000px;
+	    height:70px;
+	    background:#888;
+	}
+
+</style>
+</head>
+
+<body>
+
+<!-- ---------------------------- Inicia HEADER ---------------------------- -->
+    <header>
+
+        <div id="logo"></div>
+
+        <div id="icono1" class="redes"></div>
+        <div id="icono2" class="redes"></div>
+        <div id="icono3" class="redes"></div>
+
+    </header>
+    <!-- Cierra HEADER -->
+
+
+  <!-- --------------------- Inicia Barra de Navegación ---------------------- -->
+    <nav>
+        <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+        </ul>
+    </nav>
+ <!-- --------------------- Cierra Barra de Navegación ---------------------- -->
+
+
+ <!-- ------------------------ Inicia parte Superior ------------------------ -->
+    <div id="top">
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+ <!-- ------------------------ Cierra parte Superior ------------------------ -->
+
+
+<!-- --------------------------- Inicia Sección ---------------------------- -->
+    <section>
+
+        <aside id="izq"></aside>
+        <article></article>
+        <aside id="der"></aside>
+    </section>
+<!-- --------------------------- Cierra Sección ---------------------------- -->
+
+
+<!-- ------------------------ Inicia Pie de Página ------------------------- -->
+    <footer></footer>
+<!-- ------------------------ Cierra Pie de Página ------------------------- -->
+
+
+</body>
+</html>

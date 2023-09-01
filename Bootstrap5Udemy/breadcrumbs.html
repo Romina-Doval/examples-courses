@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Breadcrumbs / Migas de pan Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<!--* Pequeña navegación que le indica al usuario en que parte del sitio web se encuentra -->
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<nav class="breadcrumb mt-3"> <!-- mt -> margin top-->
+					<a href="#" class="breadcrumb-item">Inicio</a>
+					<a href="#" class="breadcrumb-item">Productos</a>
+					<a href="#" class="breadcrumb-item">Tablets</a>
+					<span class="breadcrumb-item active">iPad</span>
+					<!-- active -> cambia el color del elemento como activo (porque nos encontramos en este enlace/parte del sitio)
+						 para que al clickearlo no nos lleve a la misma página, en vez de link se le puede poner la etiqueta span -->
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

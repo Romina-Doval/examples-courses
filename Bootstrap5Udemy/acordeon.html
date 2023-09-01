@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acordeon</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<!--* Cada parte del "acordeón", consta de encabezado + cuerpo -->
+
+<body>
+	<div class="container">
+		<div class="row mt-4"> <!-- mt-4 (4em) -> margin top -->
+			<div class="col">
+				<div class="accordion accordion-flush" id="temario"> <!-- accordion-flush -> quita los bordes al acordeón -->
+
+
+					<!--* Atributos button -->
+					<!-- type="button" -> indica que es un botón
+						 data-bs-toggle -> al presionar el botón ejecute un collapse (cascada) -> Bootstrap
+						 data-bs-target -> objetivo -> al presionarlo, ejecute algo (elemento a ejecutar) -> Bootstrap
+						 aria-expanded -> opcional-> el componente puede ser leido en dispositivos de lectura/para ciegos
+						 aria-controles ->  opcional-> el componente puede ser leido en dispositivos de lectura/para ciegos -->
+
+					<!--* Elemento #1 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-1"> <!-- encabezado del acordeón -->
+							
+							<button 
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#elemento-1" 
+								aria-expanded="true"
+								aria-controles="elemento-1"
+							>
+								Capitulo #1
+							</button>
+						</h2>
+
+						<!-- Elemento que se va a mostrar/ejecutar y que va a ser el contenido de nuestro body/cuerpo -->
+						<!-- id -> agregar el mismo del button pero sin #
+							 accordion-collapse -> cuerpo/contenido  /  
+							 show -> muestra el contenido (si lo sacamos, primero hay que apretar el boton para que lo muestre)
+							 aria-labelledby -> para dispositivos lectura/ciegos
+							 data-bs-parent ->  contenedor padre -->
+						<div
+							id="elemento-1"
+							class="accordion-collapse collapse show" 
+							aria-labelledby="encabezado-1"
+							data-bs-parent="#temario"
+						>
+							<div class="accordion-body"> <!-- texto/contenido del body -->
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!--* Elemento #2 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-2">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#elemento-2"
+								aria-expanded="true"
+								aria-controles="elemento-2"
+							>
+								Capitulo #2
+							</button>
+						</h2>
+
+						<div
+							id="elemento-2"
+							class="accordion-collapse collapse" 
+							aria-labelledby="encabezado-2"
+							data-bs-parent="#temario"
+						>
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+
+					<!--* Elemento #3 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-3">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#elemento-3"
+								aria-expanded="true"
+								aria-controles="elemento-3"
+							>
+								Capitulo #3
+							</button>
+						</h2>
+
+						<div
+							id="elemento-3"
+							class="accordion-collapse collapse"
+							aria-labelledby="encabezado-3"
+							data-bs-parent="#temario"
+						>
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           HEAD DEL DOCUMENTO                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+<head>
+
+    <meta charset="UTF-8"> <!-- ETIQUETA META CON ATRIBUTO CHARSET PARA CODIFICAR LOS CARACTERES -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tutoriales a tu alcance"> <!-- ETIQUETA META CON ATRIBUTO AUTHOR PARA DEFINIR EL AUTOR DE LA PÁGINA -->
+    <meta name="description" content="Acá se pone la descripción del sitio"> <!-- ETIQUETA META CON ATRIBUTO NAME-DESCRIPTION PARA DESCRIBIR LA PÁGINA -->
+    <meta name="keywords" content="tutoriales, html, desarrollo web"> <!-- ETIQUETA META CON ATRIBUTO NAME-KEYWORDS PARA PONER PALABRAS CLAVES -->
+    
+    <link rel="icon" href="#"> <!-- Icon Favicon-->
+    <title>Examples</title>
+</head>
+
+
+BODY DEL DOCUMENTO
+======================================-->
+
+<body>  
+  
+   <!-- ETIQUETA PARA CREAR VÍNCULOS -->
+   
+   <a href="#">Vínculo</a>
+
+   
+   <!-- ETIQUETA PARA LLAMAR IMÁGENES EXTERNAS -->
+   
+   <figure>
+       <img src="#">
+   </figure>
+   <figcaption>Pie de página a la imagen</figcaption>  
+
+    <!-- ETIQUETA PARA CREAR MEDIDAS Y ESTADÍSTICAS <meter> Y <progress> -->
+    
+        <h1>Resultados del Examen</h1>
+        <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+        <p>Andrés: <meter value="60" min="0" max="100" high="90"></meter></p>
+        <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+        <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+    
+        <h2>Resultados de Ventas</h2>
+        <p>Fenero: <progress value="94" min="0" max="100"></progress></p>
+        <p>Febrero: <progress value="60" min="0" max="100"></progress></p>
+        <p>Marzo: <progress value="85" min="0" max="100"></progress></p>
+        <p>Abril: <progress value="45" min="0" max="100"></progress></p>
+    
+    <!-- ETIQUETA PARA CREAR SONIDO -->
+    <!-- controls (control de volumen) / loop (sonido se reproduce indefinidamente) / preload (3 valores: auto, metadata, none) -->
+     <audio controls loop preload="auto"> 
+    
+        <!-- Ogg VORBIS .ogg (liviano, habilitado en Chrome, Firefox, Opera) -->
+        <!-- MP3 .mp3 (Safary, Chrome, Internet Explorer, Sist. Operativos ios)-->
+        <!-- WAV .wav (sin compresion de datos/pesados  Firefox, Safary, Chrome, Opera)-->
+        <!-- ACC .m4a, .m4b, .m4p, .mp4, .acc -->
+        
+            <source src="audio/audio.m4a" type="audio/mp4">
+            <source src="audio/audio.mp3" type="audio/mp3">
+            <source src="audio/audio.ogg" type="audio/ogg">
+            
+    </audio>
+
+
+     <!-- ETIQUETA PARA CREAR VIDEO -->
+        
+     <video controls loop width="500" height="200"> <!-- puedo ajustar ancho y alto -->
+    
+        <!--THEORA OGG .ogg (Firefox, Opera, Chrome)-->
+        <!-- MP4 .mp4 (Safari, Internet Explorer, Chrome, Sist.Operativos ios y android )-->
+        <!-- WEBM .webm (La leen todos los navegadores menos Safari)-->
+        
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogg">
+            <source src="video/video.webm" type="video/webm">
+         
+        </video>
+
+     <!-- ETIQUETA PARA INSERTAR MULTIMEDIA O PÁGINAS EXTERNAS -->
+        
+     <iframe width="500" height="280" src="https://www.youtube.com/embed/_4RQD2SxDOI" frameborder="0" allowfullscreen></iframe>
+    
+     <iframe width="500" height="281" src="https://player.vimeo.com/video/98417189" frameborder="0" allowfullscreen></iframe>
+     
+     <iframe width="500" height="281"  frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/96144978&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+     
+    <iframe src="http://en.calameo.com/read/00456815275f9f74f0032" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;"></iframe>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63452.23829884401!2d-75.60292367355272!3d6.294597648885735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429739f2122e9%3A0x7097411dc6e57e48!2sCl.+45f+%2382-31%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1sen!2sco!4v1450302000564" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+    <iframe src="http://www.elcolombiano.com/"  width="100%" height="600” scrolling="auto" frameborder="0" AllowTransparency="true"></iframe> 
+ 
+    
+</body>
+</html>
+

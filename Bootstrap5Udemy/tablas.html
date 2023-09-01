@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tablas</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!--* Colores -->
+				<!-- Tenemos variantes disponibles para toda la tabla, toda una fila, o una celda -->
+				<!-- 
+					.table-primary    -> fondo azul
+					.table-secondary  -> fondo gris
+					.table-success	  -> fondo verde
+					.table-danger	  -> fondo rosado
+					.table-warning	  -> fondo amarillo
+					.table-info       -> fondo celeste
+
+					.table-light      -> fondo claro/blanco
+					.table-dark		  -> fondo oscuro/negro
+				-->
+
+
+				<!--* Clases de tablas -->
+				<!-- Estas clases tambien estan disponbiles para los diferentes colores -->
+				<!-- 
+					.table-striped - Colorea en formato zebra para mejor lectura.
+					.table-hover - Colorea las filas sobre las que pasamos el cursor.
+					.table-bordered - Agrega bordes a la tabla.
+					.border-danger - Colorea el borde.
+					.table-borderless - Quita los bordes, incluso de las filas.
+					.table-sm - Hace una tabla mas compacta quitandole padding a las celdas
+				-->
+
+				<!--* Tabla Responsiva -->
+				<!-- Podemos encerrar la tabla en un div con la clase .table-responsive para hacerla responsiva -->
+
+
+
+				<!--* THEAD:encabezado de la tabla / TR:filas/rows / TH: celdas encabezado tabla -->
+
+				<div class="table-responsive"> <!--* convierte a la tabla en Responsive (clase Bootstrap)-->
+					<table class="table table-striped table-hover table-sm table-bordered">
+						<!-- table: formato de tabla en Bootstrap -->
+						<caption>Lista de amigos</caption> <!--* leyenda debajo de la tabla -->
+						<thead>
+							<tr class="table-dark"> 
+								<th>Nombre</th>
+								<th>Edad</th>
+								<th>Pais</th>
+							</tr>
+						</thead>
+
+
+						<!--* TBODY: cuerpo de la tabla / TD: celdas de la tabla -->
+						<tbody>
+							<tr>
+								<td>Carlos</td>
+								<td>25</td>
+								<td>Mexico</td>
+							</tr>
+							<tr class="table-primary"> 
+								<td>Alejandro</td>
+								<td>34</td> <!-- td class="table-active" me marca la celda como activa (aparece de otro color)-->
+								<td>España</td>
+							</tr>
+							<tr>
+								<td>Cesar</td>
+								<td>30</td>
+								<td>Colombia</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

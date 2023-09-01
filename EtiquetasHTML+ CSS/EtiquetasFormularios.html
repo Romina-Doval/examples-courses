@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+</head>
+
+<body>
+   
+<!-- ----------------------------------------------------------------------- -->
+<!--                        ETIQUETA PARA FORMULARIOS                        -->
+<!-- ----------------------------------------------------------------------- -->
+
+    <center>
+        <h3>Formulario</h3>
+        <form>
+
+<!-- ----------------------------- TIPO TEXTO ------------------------------ -->
+            <label for="texto">Entrada de texto</label>
+            <input id="texto" type="text" placeholder="Entrada de texto" value="" required />
+            <!-- required : dato obligatorio / readonly : solo lectura, el campo no se epuede modificar-->
+
+            <br />
+            <br />
+            
+<!-- ------------------------- TIPO CORREO/E-MAIL -------------------------- -->
+            <label for="correo">Entrada de correo</label>
+            <input id="correo" type="email" placeholder="Entrada de correo" value="" required />
+
+            <br />
+            <br />
+
+<!-- ---------------------- TIPO PASSWORD/CONTRASEÑA ----------------------- -->
+            <label for="pass">Entrada de contraseña</label>
+            <input id="pass" type="password" placeholder="Entrada de contraseña" value="" required />
+            <!-- maxlength / minlength (max y min de caracteres permitidos) / pattern -->
+
+            <br />
+            <br />
+
+            <input type="number" value="1" min="0" max="3" />
+
+            <br />
+            <br />
+
+            <select>
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+            </select>
+
+            <br />
+            <br />
+
+<!-- ------------------------- SELECCIÓN MÚLTIPLE -------------------------- -->
+            <input type="checkbox" id="rojo" /><label for="rojo">Rojo</label>
+            <input type="checkbox" id="amarillo" /><label for="amarillo">Amarillo</label>
+            <input type="checkbox" id="verde" /><label for="verde">Verde</label>
+
+            <br />
+            <br />
+
+            <!-- se puede optar para que se pueda elegir solo una opción etiqueta name:"#" o etiqueta checked (ya aparece tildada una opción)-->
+            <input type="radio" id="blanco" name="radio" checked /><label for="blanco">Blanco</label>
+            <input type="radio" id="negro" name="radio" /><label for="negro">Negro</label>
+
+            <br />
+            <br />
+
+            <input type="submit" value="Enviar Formulario" />
+        </form>
+    </center>
+</body>
+
+</html>
